@@ -1,0 +1,296 @@
+<div class="oaf" style="background-color:#ededed ;"><!--#C0C0C0-->
+<table>
+<tr>
+<td>Academic year : </td>
+<td>[number* academic-year-1 min:2017 max:2025 "From"]</td>
+<td>[number* academic-year-2 min:2018 max:2026 "To"]</td>
+</tr>
+
+<tr>
+<td>Select the course you wish to apply for :</td>
+<td colspan="2">[radio SelectCourses id:select-courses class:select-courses use_label_element "UG Courses" "PG Courses"]</td>
+</tr>
+
+<tr>
+<td></td>
+<td colspan="2">[group ugcourses][select UGCourseslist id:ug-course-list include_blank  "Civil Engineering (CIV)" "Computer Science & Engineering (CSE)" "Computer Science & Engineering (Data Science)" "Electronics & Communication Engineering (ECE)" "Electrical & Electronics Engineering (EEE)" "Information Science & Engineering (ISE)" "Mechanical Engineering (ME)" "Computer Engineering" "Artificial Intelligence and Machine Learning"][/group]</td>
+</tr>
+
+<tr>
+<td></td>
+<td colspan="2">[group pgcourses][select PGCourseslist id:pg-course-list include_blank "Master of Business Administration(MBA)" "Master of Computer Applications(MCA)" "MTech- Computer Science & Engg"  "Others"][/group]</td>
+</tr>
+
+
+
+
+<tr>
+<td></td>
+<td>
+[group ugcourses1]
+[checkbox* checkbox-63 use_label_element "Professional"]
+[checkbox checkbox-185 use_label_element "Global"][/group]
+
+[group pgcourses1]
+[checkbox* checkbox-376 use_label_element "Professional"]
+[checkbox checkbox-129 use_label_element "Global"]
+[/group]
+</td>
+</tr>
+
+
+<tr>
+<td >Name of the Student:</td>
+<td colspan="2">[text* student-name]</td>
+</tr>
+
+<tr>
+<td >Student Mobile Number (Whatsapp):</td>
+<td >[tel* tel-student]</td>
+<td ></td>
+</tr>
+
+<tr>
+
+<td>Date of Birth :[date* dob] </td>
+<td>Blood Group :[text blood-group]  </td>
+<td> Entrance Exam Taken:[text* entrance-exam-taken] </td>
+
+</tr>
+
+<tr>
+<td>Nationality : <br/> [text* nationality]</td>
+<td>Religion : <br/> [text* religion]</td>
+<td>Category : <br/> [select* Category include_blank "SC" "ST" "CT- I" "IIA" "IIIA" "IIIB" "GM" "Miniority" "Sindhi"]</td>
+</tr>
+<tr>
+<td>Caste : <br/>[text* caste]</td>
+<td>Sex : <br/> <!--[checkbox* sex label_first exclusive "M" "F"]--></td>
+<td>Mother Tongue : <br/> [text* mother-tongue]</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><h4><strong>Parents Information</h4></strong></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td>Father / Guardian</td>
+<td>Mother</td>
+</tr>
+
+<tr>
+<td>Name</td>
+<td>[text* father-name]</td>
+<td>[text* mother-name]</td>
+</tr>
+
+<tr>
+<td>Education Qualification</td>
+<td>[text education-father]</td>
+<td>[text education-mother]</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><h4><strong>Occupation</h4></strong></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Name of the Company</td>
+<td>[text occupation-father]</td>
+<td>[text occupation-mother]</td>
+</tr>
+
+
+<tr>
+<td>Designation</td>
+<td>[text father-designation]</td>
+<td>[text mother-designation]</td>
+</tr>
+
+<tr>
+<td>Office Name - Address & Phone No</td>
+<td>[textarea office-address-father]</td>
+<td>[textarea office-address-mother]</td>
+</tr>
+
+<tr>
+<td>Email-ID</td>
+<td>[email email-father placeholder "Email (Optional)"]</td>
+<td>[email email-mother placeholder "Email (Optional)"]</td>
+</tr>
+
+<tr>
+<td>Mobile Number</td>
+<td>[tel tel-father]</td>
+<td>[tel tel-mother]</td>
+</tr>
+
+
+
+
+
+
+<tr><td colspan="3"><h4><strong>Permanent Address</strong></h4></td></tr>
+<tr>
+<td>Address : </td>
+<td colspan="2">[textarea permanent-address]</td>
+</tr>
+
+<tr>
+<td>Phone No (with ISD / STD code) :</td>
+
+<td colspan="2"> [tel permanent-phone-res]</td>
+
+</tr>
+
+<tr><td colspan="3"><h4><strong>Address for Correspondence</strong></h4></td></tr>
+<tr>
+<td>Address : </td>
+<td colspan="2">[textarea correspondence-address]</td>
+</tr>
+
+<tr>
+<td>Phone No (with ISD / STD code) :  </td>
+<td colspan="2"> [tel correspondence-phone-res]</td>
+</tr>
+
+
+
+<tr><td colspan="3"><h4><strong>Details of SSLC / X Std.</strong></h4></td></tr>
+
+<tr>
+<td>Name & Address Of Institution :</td>
+<td colspan="2">[textarea* sslc-institute-address]</td>
+</tr>
+
+<tr>
+<td>Board : <br/> [text* sslc-board]</td>
+<td>Year Of Pass : <br/> [number* sslc-year]</td>
+<td>State : <br/> [text* sslc-state]</td>
+</tr>
+
+<tr><td colspan="2"><strong>Subjects</strong></td><td><strong>Marks</strong></td></tr>
+<tr><td colspan="2">[text* sslc-subject-1 placeholder "Subject 1"]</td><td>[number* sslc-subject-1-marks "Subject 1 Marks"]</td></tr>
+<tr><td colspan="2">[text* sslc-subject-2 placeholder "Subject 2"]</td><td>[number* sslc-subject-2-marks "Subject 2 Marks"]</td></tr>
+<tr><td colspan="2">[text* sslc-subject-3 placeholder "Subject 3"]</td><td>[number* sslc-subject-3-marks "Subject 3 Marks"]</td></tr>
+<tr><td colspan="2">[text* sslc-subject-4 placeholder "Subject 4"]</td><td>[number* sslc-subject-4-marks "Subject 4 Marks"]</td></tr>
+<tr><td colspan="2">[text* sslc-subject-5 placeholder "Subject 5"]</td><td>[number* sslc-subject-5-marks "Subject 5 Marks"]</td></tr>
+<tr><td colspan="2">[text* sslc-subject-6 placeholder "Subject 6"]</td><td>[number* sslc-subject-6-marks "Subject 6 Marks"]</td></tr>
+<tr><td colspan="2">Total :</td><td>[text* sslc-total placeholder "Total Percentage"]</td></tr>
+
+[group ugcourses2]
+<tr><td colspan="3"><h4><strong>Details of PUC / XII </strong></h4></td></tr>
+
+<tr>
+<td>Name & Address Of Institution last studied :</td>
+<td colspan="2">[textarea puc-institute-address]</td>
+</tr>
+<tr>
+<td>Reg No. : </td>
+<td colspan="2">[text puc-reg-no]</td>
+</tr>
+
+<tr>
+<td>Board : <br/> [text puc-board]</td>
+<td>Year Of Pass : <br/> [number puc-year]</td>
+<td>State : <br/> [text puc-state]</td>
+</tr>
+<tr><td colspan="2"><strong>Part I (Languages)</strong></td><td><strong>Marks</strong></td></tr>
+<tr><td colspan="2">[text puc-subject-1 placeholder "Language 1"]</td><td>[number puc-subject-1-marks "Language 1 Marks"]</td></tr>
+<tr><td colspan="2">[text puc-subject-2 placeholder "Language 2"]</td><td>[number puc-subject-2-marks "Language 2 Marks"]</td></tr>
+<tr><td colspan="2"><strong>Part II (Core Subjects)</strong></td><td><strong>Marks</strong></td></tr>
+<tr><td colspan="2">[text puc-subject-3 placeholder "Subject 1"]</td><td>[number puc-subject-3-marks "Subject 1 Marks"]</td></tr>
+<tr><td colspan="2">[text puc-subject-4 placeholder "Subject 2"]</td><td>[number puc-subject-4-marks "Subject 2 Marks"]</td></tr>
+<tr><td colspan="2">[text puc-subject-5 placeholder "Subject 3"]</td><td>[number puc-subject-5-marks "Subject 3 Marks"]</td></tr>
+<tr><td colspan="2">[text puc-subject-6 placeholder "Subject 4"]</td><td>[number puc-subject-6-marks "Subject 4 Marks"]</td></tr>
+<tr><td colspan="2">Total : </td><td>[text puc-total  placeholder "Total Percentage"]</td></tr>
+[/group]
+</table>
+[group pgcourses2]
+<table>
+<tr><td colspan="3"><h4><strong>Details of DEGREE / DIPLOMA</strong></h4></td></tr>
+<tr>
+<td>Name & Address Of Institutions</td>
+<td colspan="3">[textarea degree-institute-address]</td>
+</tr>
+
+<tr>
+<td colspan="2">University : <br/> [text degree-university]</td>
+<td>Total Percentage : <br/> [text degree-agg placeholder "Aggregate"]</td>
+<td>State : <br/> [text degree-state]</td>
+</tr>
+
+<tr><td>Name of the Course </td><td colspan="3">[text degree-course]</td></tr>
+<tr><td></td><td><strong>Semesters Marks</strong></td><td><strong>Percentage</strong></td><td><strong>Year Of Passing</strong></td></tr>
+<tr><td>Semester I :</td><td>[number degree-sem-1-marks]</td><td>[text degree-sem-1-percen]</td><td>[text degree-sem-1-year]</td></tr>
+<tr><td>Semester II :</td><td>[number degree-sem-2-marks ]</td><td>[text degree-sem-2-percen]</td><td>[text degree-sem-2-year]</td></tr>
+<tr><td>Semester III :</td><td>[number degree-sem-3-marks ]</td><td>[text degree-sem-3-percen]</td><td>[text degree-sem-3-year]</td></tr>
+<tr><td>Semester IV :</td><td>[number degree-sem-4-marks ]</td><td>[text degree-sem-4-percen]</td><td>[text degree-sem-4-year]</td></tr>
+<tr><td>Semester V :</td><td>[number degree-sem-5-marks ]</td><td>[text degree-sem-5-percen]</td><td>[text degree-sem-5-year]</td></tr>
+<tr><td>Semester VI :</td><td>[number degree-sem-6-marks ]</td><td>[text degree-sem-6-percen]</td><td>[text degree-sem-6-year]</td></tr>
+
+</table>
+[/group]
+
+<table>
+<tr><td colspan="3"><h4><strong>Declaration By The Student</strong></h4></td></tr>
+<tr><td colspan="3"><ol type="1">
+  <li>I hereby agree to abide by the rules and regulations of the University, the State Government & the college regarding my admission, to be approved based on eligibility criteria and submission of testimonials in original as stipulated by the University.</li>
+  <li>I agree to abide by all the rules and regulations regarding payment of fees for my course. Payment of fees on time is my/ parent's responsibility and any delay will attract fine as decided by the Management from time to time. I accept that refund of fees is not allowed under any circumstances.</li>
+  <li>I agree to the rule that deposits of any kind, both at college and hostel , will be refunded only after the completion of the course. I will not request for any refund if I withdraw or vacate the hostel room. I agree that the entire amount shall be forfeited under such situation.</li>
+  <li>I declare that I shall not indulge in ragging, eve-teasing, smoking, consuming alcohol drug abuse or any other anti-social activity in the college premises, hostel, on educational tours, industrial visits or elsewhere.</li>
+  <li>I shall abide by the dress code prescribed by the Institution.</li>
+  <li>I shall abide by the rules and regulations of the Institution in force, which may be amended from time to time by the University/ Management/ State Government/ and/ or any other regulatory authorities. The decision of the Management with respect to any administrative or academic matter shall be final and binding on me at all times.</li>
+  <li>I shall accept the decision of the authorities in all matters of training, conduct and discipline with no right to question any of them.</li>
+</ol></td></tr>
+
+<tr><td colspan="3"><!--[checkbox* student-acceptance " "]-->I declare that the particulars furnished above are true to the best of my knowledge and belief. I have read and understood the rules and regulations for my admission to course and shall abide by the rules and regulations that shall be binding on me at all times.</td></tr>
+
+<tr>
+<td>Place </td>
+<td>[text* place-student]</td>
+<td>Date :</td>
+<td> [date* student-date id:todaydate]</td>
+</tr>
+</table>
+
+<table>
+<tr><td colspan="3"><h4><strong>Declaration By Parent / Guardian </strong></h4></td></tr>
+<tr><td colspan="3">I hereby declare that my ward does not suffer from any disease/ ailments. I know the financial obligations of my ward and I can afford to pay all the costs and undertake to pay the tuition fees and other fees payable on time to the college as per the rules in force and which may be amended from time to time by the Management. I am aware of the fact that the fee paid to the college for admission will not be refunded in case he/she does not join the course, he/she discontinues the studies, he/she is expelled from the college for any reason. I also stand by the declaration given to the college by my son/ daughter.</td></tr>
+<tr><td colspan="3"><!--[checkbox* parent-acceptance " "]-->I declare that the particulars furnished above are true to the best of my knowledge and belief. I have read and understood the rules and regulations for my ward's admission to course and shall abide by the rules and regulations that shall be binding on me / my ward at all times.</td></tr>
+<tr>
+
+<td>Place </td>
+<td>[text* place-parent]</td>
+<td>Date :</td>
+<td>[date* parent-date id:todaydate]</td>
+</tr>
+
+<tr>
+<td colspan="3"><span style="margin-top:50px !important;text-align:center !important;">[submit class:admiscontact "Submit"]</span></td>
+</tr>
+</table>
+</div>
